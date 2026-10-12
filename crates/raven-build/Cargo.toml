@@ -1,0 +1,16 @@
+[package]
+name = "raven-build"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Build-system adapters, process execution, toolchain discovery and diagnostics for Raven Pico"
+
+[dependencies]
+raven-core = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+tempfile = { workspace = true }
+testkit = { workspace = true }

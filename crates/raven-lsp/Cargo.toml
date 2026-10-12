@@ -1,0 +1,27 @@
+[package]
+name = "raven-lsp"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Language Server Protocol client foundation for Raven Code: JSON-RPC over stdio with a thread-based, dependency-light implementation."
+publish = false
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+# The mock-server end-to-end test doubles as the mock language server when
+# re-executed with RAVEN_LSP_MOCK=1; a test harness would print protocol-
+# breaking output on stdout, so it runs with harness = false.
+[[test]]
+name = "mock_server"
+harness = false

@@ -1,0 +1,16 @@
+[package]
+name = "raven-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Shared types, errors, configuration and reporting for Raven Pico"
+
+[dependencies]
+serde = { workspace = true }
+toml = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }

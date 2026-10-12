@@ -1,0 +1,15 @@
+[package]
+name = "raven-api-examples"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Examples that use the Raven Pico libraries as a reusable backend"
+publish = false
+
+[dependencies]
+raven-core = { workspace = true }
+raven-projects = { workspace = true }
+raven-build = { workspace = true }
+serde_json = { workspace = true }

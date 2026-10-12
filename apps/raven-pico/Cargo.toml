@@ -1,0 +1,28 @@
+[package]
+name = "raven-pico"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Raven Pico — the Raven ecosystem's standalone build backend and command-line tool"
+default-run = "raven-pico"
+
+[dependencies]
+raven-core = { workspace = true }
+raven-projects = { workspace = true }
+raven-build = { workspace = true }
+clap = { workspace = true }
+serde_json = { workspace = true }
+
+[build-dependencies]
+winresource = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+tempfile = { workspace = true }
+testkit = { workspace = true }
+
+[[bin]]
+name = "raven-pico"
+path = "src/main.rs"

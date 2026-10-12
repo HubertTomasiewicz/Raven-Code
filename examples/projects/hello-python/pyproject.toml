@@ -1,0 +1,5 @@
+[project]
+name = "hello-python"
+version = "0.1.0"
+description = "Raven Pico Python sample"
+requires-python = ">=3.8"

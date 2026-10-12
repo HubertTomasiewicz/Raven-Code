@@ -1,0 +1,47 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/raven-core",
+    "crates/raven-projects",
+    "crates/raven-build",
+    "crates/testkit",
+    "apps/raven-pico",
+    "tests",
+    "examples/api",
+    # Raven Code — the lightweight editor (see apps/raven-code, docs/raven-code/)
+    "apps/raven-code",
+    "crates/raven-editor",
+    "crates/raven-lsp",
+]
+# Sample projects are standalone on purpose (they must NOT join this workspace,
+# otherwise nested Cargo projects would be built by the workspace itself).
+exclude = [
+    "examples/projects/hello-rust",
+]
+
+[workspace.package]
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+authors = ["Raven Developers"]
+homepage = "https://raven.example.dev"
+repository = "https://raven.example.dev/raven-pico"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.9"
+thiserror = "2"
+clap = { version = "4", features = ["derive"] }
+tempfile = "3"
+winresource = "0.1"
+regex = "1"
+
+# Workspace crates
+raven-core = { path = "crates/raven-core" }
+raven-projects = { path = "crates/raven-projects" }
+raven-build = { path = "crates/raven-build" }
+testkit = { path = "crates/testkit" }
+raven-editor = { path = "crates/raven-editor" }
+raven-lsp = { path = "crates/raven-lsp" }

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- file body -->
+  <path d="M70 20 H150 L204 74 V218 Q204 236 186 236 H70 Q52 236 52 218 V38 Q52 20 70 20 Z" fill="#303030" stroke="#70A433" stroke-width="11" stroke-linejoin="round"/>
+  <!-- folded corner -->
+  <path d="M150 20 L204 74 H163 Q150 74 150 61 Z" fill="#70A433" stroke="#70A433" stroke-width="11" stroke-linejoin="round"/>
+  <!-- packed data blocks (hash/segments) -->
+  <g fill="#70A433">
+    <rect x="84" y="96" width="12" height="12" rx="2.5"/>
+    <rect x="112" y="96" width="12" height="12" rx="2.5"/>
+    <rect x="140" y="96" width="12" height="12" rx="2.5"/>
+    <rect x="168" y="96" width="12" height="12" rx="2.5"/>
+    <rect x="98" y="123" width="12" height="12" rx="2.5"/>
+    <rect x="126" y="123" width="12" height="12" rx="2.5"/>
+    <rect x="154" y="123" width="12" height="12" rx="2.5"/>
+  </g>
+  <!-- padlock (encrypted) -->
+  <path d="M114 170 V154 Q114 140 128 140 Q142 140 142 154 V170" fill="none" stroke="#70A433" stroke-width="9.5"/>
+  <rect x="102" y="164" width="52" height="40" rx="9" fill="#70A433"/>
+  <circle cx="128" cy="180" r="6.5" fill="#303030"/>
+  <rect x="124" y="182" width="8" height="13" rx="3.5" fill="#303030"/>
+</svg>

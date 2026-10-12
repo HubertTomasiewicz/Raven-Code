@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <!-- file body -->
+  <path d="M70 20 H150 L204 74 V218 Q204 236 186 236 H70 Q52 236 52 218 V38 Q52 20 70 20 Z" fill="#303030" stroke="#70A433" stroke-width="11" stroke-linejoin="round"/>
+  <!-- folded corner -->
+  <path d="M150 20 L204 74 H163 Q150 74 150 61 Z" fill="#70A433" stroke="#70A433" stroke-width="11" stroke-linejoin="round"/>
+  <!-- binary row 1 : 1 0 0 1 -->
+  <g fill="#70A433">
+    <rect x="90.5" y="102.5" width="7" height="19" rx="3.5"/>
+    <path fill-rule="evenodd" d="M110.5 112 a9.5 9.5 0 1 0 19 0 a9.5 9.5 0 1 0 -19 0 Z M116.5 112 a3.5 3.5 0 1 0 7 0 a3.5 3.5 0 1 0 -7 0 Z"/>
+    <path fill-rule="evenodd" d="M136.5 112 a9.5 9.5 0 1 0 19 0 a9.5 9.5 0 1 0 -19 0 Z M142.5 112 a3.5 3.5 0 1 0 7 0 a3.5 3.5 0 1 0 -7 0 Z"/>
+    <rect x="168.5" y="102.5" width="7" height="19" rx="3.5"/>
+  </g>
+  <path d="M85.5 108 L92 103.5" stroke="#70A433" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <path d="M163.5 108 L170 103.5" stroke="#70A433" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <!-- binary row 2 : 0 1 1 0 -->
+  <g fill="#70A433">
+    <path fill-rule="evenodd" d="M84.5 148 a9.5 9.5 0 1 0 19 0 a9.5 9.5 0 1 0 -19 0 Z M90.5 148 a3.5 3.5 0 1 0 7 0 a3.5 3.5 0 1 0 -7 0 Z"/>
+    <rect x="116.5" y="138.5" width="7" height="19" rx="3.5"/>
+    <rect x="142.5" y="138.5" width="7" height="19" rx="3.5"/>
+    <path fill-rule="evenodd" d="M162.5 148 a9.5 9.5 0 1 0 19 0 a9.5 9.5 0 1 0 -19 0 Z M168.5 148 a3.5 3.5 0 1 0 7 0 a3.5 3.5 0 1 0 -7 0 Z"/>
+  </g>
+  <path d="M111.5 144 L118 139.5" stroke="#70A433" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <path d="M137.5 144 L144 139.5" stroke="#70A433" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+  <!-- gear badge (editor) -->
+  <g fill="#70A433">
+    <rect x="169.5" y="164" width="13" height="64" rx="4"/>
+    <rect x="169.5" y="164" width="13" height="64" rx="4" transform="rotate(45 176 196)"/>
+    <rect x="169.5" y="164" width="13" height="64" rx="4" transform="rotate(90 176 196)"/>
+    <rect x="169.5" y="164" width="13" height="64" rx="4" transform="rotate(135 176 196)"/>
+    <circle cx="176" cy="196" r="23"/>
+  </g>
+  <circle cx="176" cy="196" r="9.5" fill="#303030"/>
+</svg>

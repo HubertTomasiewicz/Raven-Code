@@ -1,0 +1,63 @@
+[package]
+name = "raven-code"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Raven Code — the Raven ecosystem's lightweight, fast code and text editor."
+publish = false
+
+[[bin]]
+name = "raven-code"
+path = "src/main.rs"
+
+[dependencies]
+raven-core = { workspace = true }
+raven-projects = { workspace = true }
+raven-build = { workspace = true }
+raven-editor = { workspace = true }
+raven-lsp = { workspace = true }
+
+serde = { workspace = true }
+serde_json = { workspace = true }
+toml = { workspace = true }
+regex = { workspace = true }
+
+# GUI framework (evaluation in docs/raven-code/ui-framework.md: no GUI stack
+# existed in Raven Pico, so egui/eframe was selected — pure Rust, mature,
+# Windows/Linux/macOS, high-DPI, dark/light theming built in).
+eframe = { version = "0.36", default-features = false, features = [
+    "default_fonts",
+    "glow",
+    "wayland",
+    "x11",
+    "accesskit",
+] }
+
+# Syntax highlighting (Sublime grammars; incremental per-line state cache).
+syntect = { version = "5", default-features = false, features = [
+    "default-syntaxes",
+    "default-themes",
+    "parsing",
+    "yaml-load",
+    "regex-onig",
+] }
+
+# Native file dialogs. On Linux, the portal backend avoids the GTK
+# build-time dependency; Windows uses the native IFileDialog.
+rfd = { version = "0.17", default-features = false, features = [
+    "xdg-portal",
+] }
+
+# PNG decoding for the embedded brand icon (window/taskbar icon).
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "gif", "webp", "bmp", "ico"] }
+resvg = "0.45"
+tiny-skia = "0.11"
+usvg = "0.45"
+
+[target.'cfg(windows)'.build-dependencies]
+winresource = { workspace = true }
+
+[build-dependencies]
+winresource.workspace = true

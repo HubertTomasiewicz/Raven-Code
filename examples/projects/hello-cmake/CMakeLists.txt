@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(hello_cmake C)
+set(CMAKE_C_STANDARD 11)
+add_executable(hello_cmake src/main.c)
+enable_testing()
+add_test(NAME smoke COMMAND hello_cmake)
